@@ -29,10 +29,11 @@ public class Fabricante {
 				fabricantes.add(f);
 			}
 		}
-		int lista[]; lista=new int[fabricantes.size()];
+		int lista[]; 
+		lista=new int[fabricantes.size()];
 		for (Vehiculo vehiculo: Vehiculo.getVehiculos()) {
-			int a=fabricantes.indexOf(vehiculo.getFabricante());
-			lista[a]++;
+			int indice=fabricantes.indexOf(vehiculo.getFabricante());
+			lista[indice]++;
 		}
 		int cont=0;
 		for (int i=1;i<lista.length;i++) {

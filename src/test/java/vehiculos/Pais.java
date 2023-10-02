@@ -29,7 +29,7 @@ public class Pais {
 			lista[indice]++;
 		}
 		int cont=0;
-		for (int i=1;1<lista.length;i++) {
+		for (int i=1;i<lista.length;i++) {
 			if(lista[i]>lista[cont]) {
 				cont=i;
 			}
